@@ -1968,10 +1968,7 @@ atualizar_arquivo() {
 }
 
 telemetria() {
-    ## Pega o IP da máquina
-    read -r ip _ <<< "$(hostname -I)"
-
-    ip="$ip"
+    ip="127.0.0.1"
     ferramenta="$1"
     status="$2"
 
