@@ -2671,12 +2671,12 @@ preencha_as_info
 while true; do
 
 echo -e "\e[97mPasso$amarelo 1/5\e[0m"
-echo -en "\e[33mDigite o endereço de Email (ex: contato@oriondesign.art.br): \e[0m" && read -r email_teste
+echo -en "\e[33mDigite o endereço de Email (ex: contato@ubop.com.br): \e[0m" && read -r email_teste
 echo ""
 
 echo -e "\e[97mPasso$amarelo 2/5\e[0m"
 echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-echo -en "\e[33mDigite o usuário de Email (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_teste
+echo -en "\e[33mDigite o usuário de Email (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_teste
 echo ""
 
 echo -e "\e[97mPasso$amarelo 3/5\e[0m"
@@ -2809,7 +2809,7 @@ while true; do
     
     ## Pergunta o Email para informações sobre o certificado
     echo -e "\e[97mPasso$amarelo 4/4\e[0m"
-    echo -en "\e[33mDigite um endereço de Email válido (ex: contato@oriondesign.art.br): \e[0m" && read -r email_ssl
+    echo -en "\e[33mDigite um endereço de Email válido (ex: contato@ubop.com.br): \e[0m" && read -r email_ssl
     echo ""
 
     ## Limpa o termianl
@@ -4412,7 +4412,7 @@ while true; do
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
 
     ## Define o dominio SMTP com o dominio do email
@@ -4421,7 +4421,7 @@ while true; do
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_smtp_chatwoot
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_smtp_chatwoot
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -6749,13 +6749,13 @@ while true; do
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 4/10\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_typebot
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_typebot
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 5/10\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_typebot
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r usuario_email_typebot
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -7194,13 +7194,13 @@ while true; do
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 3/7\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_n8n
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_smtp_n8n
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 4/7\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_smtp_n8n
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r usuario_smtp_n8n
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -7951,7 +7951,7 @@ while true; do
     
     ##Pergunta o Email para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/3\e[0m"
-    echo -en "\e[33mDigite um email para o PgAdmin 4 (ex: contato@oriondesign.art.br): \e[0m" && read -r user_PgAdmin_4
+    echo -en "\e[33mDigite um email para o PgAdmin 4 (ex: contato@ubop.com.br): \e[0m" && read -r user_PgAdmin_4
     echo ""
     
     ##Pergunta a Senha para a ferramenta
@@ -8177,7 +8177,7 @@ while true; do
     
     ##Pergunta o Email para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/4\e[0m"
-    echo -en "\e[33mDigite um email para o Nocobase (ex: contato@oriondesign.art.br): \e[0m" && read -r mail_nocobase
+    echo -en "\e[33mDigite um email para o Nocobase (ex: contato@ubop.com.br): \e[0m" && read -r mail_nocobase
     echo ""
     
     ##Pergunta um Usuario para a ferramenta
@@ -9042,12 +9042,12 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r mail_baserow
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r mail_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_baserow
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -10018,13 +10018,13 @@ while true; do
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_calcom
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_calcom
     echo ""
 
     ## Pergunta o Ususario SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuario para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_calcom
+    echo -en "\e[33mDigite o Usuario para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_calcom
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -10336,7 +10336,7 @@ while true; do
 
     ## Pergunta o email da ferramenta
     echo -e "\e[97mPasso$amarelo 3/4\e[0m"
-    echo -en "\e[33mDigite o Email de admin: (ex: contato@oriondesign.art.br): \e[0m" && read -r email_mautic
+    echo -en "\e[33mDigite o Email de admin: (ex: contato@ubop.com.br): \e[0m" && read -r email_mautic
     echo ""
     
     ## Pergunta o senha da ferramenta
@@ -11668,13 +11668,13 @@ while true; do
     
     ## Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_formbricks
+    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_formbricks
     echo ""
 
     ## Pergunta o User SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuario do SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_smtp_formbricks
+    echo -en "\e[33mDigite o Usuario do SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_smtp_formbricks
     echo ""
     
     ## Pergunta a Senha SMTP
@@ -12999,7 +12999,7 @@ while true; do
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
 
     ## Define o dominio SMTP com o dominio do email
@@ -13008,7 +13008,7 @@ while true; do
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_smtp_chatwoot
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_smtp_chatwoot
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -13908,7 +13908,7 @@ while true; do
 
     ##Pergunta Email do Quepasa
     echo -e "\e[97mPasso$amarelo 5/5\e[0m"
-    echo -en "\e[33mDigite o email do Quepasa (ex: contato@oriondesign.art.br): \e[0m" && read -r email_quepasa
+    echo -en "\e[33mDigite o email do Quepasa (ex: contato@ubop.com.br): \e[0m" && read -r email_quepasa
     echo ""
     
     ## Limpa o terminal
@@ -14431,7 +14431,7 @@ while true; do
 
     ##Pergunta o email para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/2\e[0m"
-    echo -en "\e[33mDigite o email para o Quepasa (ex: contato@oriondesign.art.br): \e[0m" && read -r email_quepasa
+    echo -en "\e[33mDigite o email para o Quepasa (ex: contato@ubop.com.br): \e[0m" && read -r email_quepasa
     echo ""
 
     ##Pergunta o Dominio do Editor N8N Quepasa
@@ -14740,13 +14740,13 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_docuseal
+    echo -en "\e[33mDigite a Email SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_smtp_docuseal
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_smtp_docuseal
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_smtp_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -15502,14 +15502,14 @@ while true; do
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 3/9\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_dify
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_dify
     echo ""
     
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 4/9\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_email_dify
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_email_dify
     echo ""
 
     ## Pergunta a senha do SMTP
@@ -15966,9 +15966,9 @@ services:
       ## Dados de Autenticação
       - AUTHENTICATION_APIKEY_ENABLED=true
       - AUTHENTICATION_APIKEY_ALLOWED_KEYS=$token_weaviate
-      - AUTHENTICATION_APIKEY_USERS=contato@oriondesign.art.br
+      - AUTHENTICATION_APIKEY_USERS=contato@ubop.com.br
       - AUTHORIZATION_ADMINLIST_ENABLED=true
-      - AUTHORIZATION_ADMINLIST_USERS=contato@oriondesign.art.br
+      - AUTHORIZATION_ADMINLIST_USERS=contato@ubop.com.br
 
       ## Telemetria
       - DISABLE_TELEMETRY=true
@@ -16347,7 +16347,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/7\e[0m"
-    echo -en "\e[33mDigite o Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_affine
+    echo -en "\e[33mDigite o Email de Admin (ex: contato@ubop.com.br): \e[0m" && read -r email_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -16358,7 +16358,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 4/7\e[0m"
-    echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_affine
+    echo -en "\e[33mDigite a Email SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_smtp_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -16684,7 +16684,7 @@ while true; do
 
      ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 2/9\e[0m"
-    echo -en "\e[33mDigite a Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_directus
+    echo -en "\e[33mDigite a Email de Admin (ex: contato@ubop.com.br): \e[0m" && read -r email_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -16695,7 +16695,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 4/9\e[0m"
-    echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_directus
+    echo -en "\e[33mDigite a Email SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_smtp_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
@@ -17063,7 +17063,7 @@ while true; do
     
     ## Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/5\e[0m"
-    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_vaultwarden
+    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_vaultwarden
     echo ""
     
     ## Pergunta a Senha SMTP
@@ -18269,13 +18269,13 @@ while true; do
 
     ###Pergunta o Email SMTP
     #echo -e "\e[97mPasso$amarelo 4/10\e[0m"
-    #echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_supabase
+    #echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_supabase
     #echo ""
 
     ##Pergunta o usuário do Email SMTP
     #echo -e "\e[97mPasso$amarelo 5/10\e[0m"
     #echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    #echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_supabase
+    #echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r usuario_email_supabase
     #echo ""
     
     ## Pergunta a senha do SMTP
@@ -19652,13 +19652,13 @@ while true; do
 
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 4/8\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_lowcoder
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_smtp_lowcoder
     echo ""
 
     ## Pergunta o Ususario SMTP
     echo -e "\e[97mPasso$amarelo 5/8\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuario para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_smtp_lowcoder
+    echo -en "\e[33mDigite o Usuario para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_smtp_lowcoder
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -20898,7 +20898,7 @@ while true; do
 
     ## Pergunta o email da ferramenta
     echo -e "\e[97mPasso$amarelo 4/10\e[0m"
-    echo -en "\e[33mDigite o Email do Admin: (ex: contato@oriondesign.art.br): \e[0m" && read -r email_humhub
+    echo -en "\e[33mDigite o Email do Admin: (ex: contato@ubop.com.br): \e[0m" && read -r email_humhub
     echo ""
     
     ## Pergunta o senha da ferramenta
@@ -20909,13 +20909,13 @@ while true; do
 
     ## Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 6/10\e[0m"
-    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_humhub
+    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_smtp_humhub
     echo ""
 
     ## Pergunta o User SMTP
     echo -e "\e[97mPasso$amarelo 7/10\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuario do SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_smtp_humhub
+    echo -en "\e[33mDigite o Usuario do SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_smtp_humhub
     echo ""
     
     ## Pergunta a Senha SMTP
@@ -21515,13 +21515,13 @@ while true; do
 
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_twentycrm
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_smtp_twentycrm
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_smtp_twentycrm
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r user_smtp_twentycrm
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -23581,13 +23581,13 @@ while true; do
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/8\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_documenso
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_documenso
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/8\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_documenso
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r usuario_email_documenso
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -23974,18 +23974,18 @@ while true; do
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$amarelo 5/10\e[0m"
     echo -e "$amarelo--> Sem caracteres especiais: \!#$"
-    echo -en "\e[33mDigite um Email para o Usuario (ex: contato@oriondesign.art.br): \e[0m" && read -r mail_moodle
+    echo -en "\e[33mDigite um Email para o Usuario (ex: contato@ubop.com.br): \e[0m" && read -r mail_moodle
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 6/10\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_moodle
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_smtp_moodle
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 7/10\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_smtp_moodle
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r usuario_smtp_moodle
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -24329,13 +24329,13 @@ while true; do
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_tooljet
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_smtp_tooljet
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_smtp_tooljet
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r usuario_smtp_tooljet
     echo ""
     
     ## Pergunta a senha do SMTP
@@ -26227,13 +26227,13 @@ while true; do
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$amarelo 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_krayincrm
+    echo -en "\e[33mDigite o Email para SMTP (ex: contato@ubop.com.br): \e[0m" && read -r email_krayincrm
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$amarelo 3/6\e[0m"
     echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_krayincrm
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@ubop.com.br): \e[0m" && read -r usuario_email_krayincrm
     echo ""
     
     ## Pergunta a senha do SMTP
