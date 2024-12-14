@@ -2597,7 +2597,8 @@ criar_banco_pgvector_da_stack() {
 ## Criar banco MySQL
 criar_banco_mysql_da_stack() {
     while :; do
-        if docker ps -q --filter "name=^mysql_mysql" | grep -q .; then
+        if docker ps -q --filter "name=mysql_mysql" | grep -q .; then
+        
             CONTAINER_ID=$(docker ps -q --filter "name=^mysql_mysql")
 
             # Verificar se o banco de dados já existe
