@@ -8983,6 +8983,10 @@ services:
     deploy:
       mode: replicated
       replicas: 1
+      resources:
+        limits:
+          memory: 1000M
+          cpus: '1.00'
       placement:
         constraints:
           - node.role == manager
