@@ -2597,8 +2597,8 @@ criar_banco_pgvector_da_stack() {
 ## Criar banco MySQL
 criar_banco_mysql_da_stack() {
     while :; do
-        if docker ps -q --filter "name=^mysql_mysql" | grep -q .; then
-            CONTAINER_ID=$(docker ps -q --filter "name=^mysql_mysql")
+        if docker ps -q --filter "name=mysql_mysql" | grep -q .; then
+            CONTAINER_ID=$(docker ps -q --filter "name=mysql_mysql")
 
             # Verificar se o banco de dados já existe
             docker exec -e MYSQL_PWD="$senha_mysql" "$CONTAINER_ID" mysql -u root \
@@ -8945,23 +8945,34 @@ echo ""
 sleep 1
 
 
+
+
+## Encontra dinamicamente o container que começa com "mysql_mysql"
+CONTAINER_MYSQL=$(docker ps --filter "name=^mysql_mysql" --format "{{.Names}}" | head -n 1)
+
+if [ -z "$CONTAINER_MYSQL" ]; then
+    echo "Erro: Nenhum container MySQL encontrado com prefixo 'mysql_mysql'."
+    exit 1
+fi
+
 ## Gera um nome de usuário e senha únicos para a instalação
 nome_usuario_mysql="user_${nome_site_wordpress}"
 senha_usuario_mysql=$(openssl rand -base64 12)
 
 ## Cria o usuário e concede privilégios ao banco específico
-docker exec -e MYSQL_PWD="$senha_mysql" mysql_mysql mysql -u root <<SQL
+docker exec -e MYSQL_PWD="$senha_mysql" "$CONTAINER_MYSQL" mysql -u root <<SQL
 CREATE USER '$nome_usuario_mysql'@'%' IDENTIFIED BY '$senha_usuario_mysql';
 GRANT ALL PRIVILEGES ON $nome_site_wordpress.* TO '$nome_usuario_mysql'@'%';
 FLUSH PRIVILEGES;
 SQL
 
 if [ $? -eq 0 ]; then
-    echo "5/8 - [ OK ] - Usuário MySQL criado e privilégios configurados"
+    echo "4/4 - [ OK ] - Usuário MySQL criado e privilégios configurados"
 else
-    echo "5/8 - [ OFF ] - Falha ao criar usuário MySQL"
+    echo "4/4 - [ OFF ] - Falha ao criar usuário MySQL"
     exit 1
 fi
+
 
 
 ## Criando a stack wordpress.yaml
