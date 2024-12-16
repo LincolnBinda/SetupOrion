@@ -8944,9 +8944,6 @@ echo -e "\e[97m• INSTALANDO WORDPRESS \e[33m[4/7]\e[0m"
 echo ""
 sleep 1
 
-
-
-
 ## Encontra dinamicamente o container que começa com "mysql_mysql"
 CONTAINER_MYSQL=$(docker ps --filter "name=^mysql_mysql" --format "{{.Names}}" | head -n 1)
 
@@ -8960,11 +8957,11 @@ nome_usuario_mysql="user_${nome_site_wordpress}"
 senha_usuario_mysql=$(openssl rand -base64 12)
 
 ## Cria o usuário e concede privilégios ao banco específico
-docker exec -e MYSQL_PWD="$senha_mysql" "$CONTAINER_MYSQL" mysql -u root <<SQL
-CREATE USER '$nome_usuario_mysql'@'%' IDENTIFIED BY '$senha_usuario_mysql';
+docker exec -i -e MYSQL_PWD="$senha_mysql" "$CONTAINER_MYSQL" mysql -u root <<EOF
+CREATE USER IF NOT EXISTS '$nome_usuario_mysql'@'%' IDENTIFIED BY '$senha_usuario_mysql';
 GRANT ALL PRIVILEGES ON $nome_site_wordpress.* TO '$nome_usuario_mysql'@'%';
 FLUSH PRIVILEGES;
-SQL
+EOF
 
 if [ $? -eq 0 ]; then
     echo "4/4 - [ OK ] - Usuário MySQL criado e privilégios configurados"
@@ -8972,7 +8969,6 @@ else
     echo "4/4 - [ OFF ] - Falha ao criar usuário MySQL"
     exit 1
 fi
-
 
 
 ## Criando a stack wordpress.yaml
